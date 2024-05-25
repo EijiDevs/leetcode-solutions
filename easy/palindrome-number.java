@@ -1,7 +1,7 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        // Si es negativo no es palindromo debido al signo
-        if(x < 0){
+        // Si es negativo no es palindromo debido al signo, si termina en 0 no es palindramo a excepción de 0
+        if(x < 0 || (x % 10 == 0 && x != 0)){
             return false;
         }
 
